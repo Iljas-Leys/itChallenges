@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\examenItChallenges.bundle.scp.css",
+      "PackagePath": "staticwebassets\\examenItChallenges.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.examenItChallenges.props",
+      "PackagePath": "build\\examenItChallenges.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.examenItChallenges.props",
+      "PackagePath": "buildMultiTargeting\\examenItChallenges.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.examenItChallenges.props",
+      "PackagePath": "buildTransitive\\examenItChallenges.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.examenItChallenges.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

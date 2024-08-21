@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges.Client\\obj\\Debug\\net8.0\\compressed\\hp5pqtwdum.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.examenItChallenges.Client.props",
+      "PackagePath": "build\\examenItChallenges.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.examenItChallenges.Client.props",
+      "PackagePath": "buildMultiTargeting\\examenItChallenges.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.examenItChallenges.Client.props",
+      "PackagePath": "buildTransitive\\examenItChallenges.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.examenItChallenges.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

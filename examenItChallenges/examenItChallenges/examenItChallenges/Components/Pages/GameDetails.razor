@@ -1,0 +1,64 @@
+﻿@page "/game-details/{GameId:int}"
+@using System.Text.Json
+@using Blazored.LocalStorage
+@using examenItChallenges.models
+@inject ILocalStorageService localStorage
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="container mt-5">
+    @if (game != null)
+    {
+        <h1>@game.Name</h1>
+        <p class="mt-3">@game.Description</p>
+        <ul class="list-group mb-3">
+            @foreach (var player in game.Players)
+            {
+                <li class="list-group-item">@player</li>
+            }
+        </ul>
+        <p>Speeltijd: @game.Duration</p>
+        <p>Moeilijkheid: @game.Difficulty</p>
+        <h2>Recensies</h2>
+        <ul class="list-group mb-3">
+            @foreach (var review in game.Reviews)
+            {
+                <li class="list-group-item">@review</li>
+            }
+        </ul>
+        <button class="btn btn-primary" @onclick="NavigateBack">Terug naar lijst</button>
+    }
+    else
+    {
+        <p>Spel niet gevonden.</p>
+        <button class="btn btn-primary" @onclick="NavigateBack">Terug naar lijst</button>
+    }
+</div>
+
+@code {
+    [Parameter] public int GameId { get; set; }
+    private Game game;
+    private bool isInitialized = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !isInitialized)
+        {
+            // Load games from localStorage
+            var games = await localStorage.GetItemAsync<List<Game>>("games");
+
+            if (games != null)
+            {
+                game = games.FirstOrDefault(g => g.Id == GameId);
+            }
+
+            isInitialized = true;
+            StateHasChanged(); // Refresh the UI after the game has been loaded
+        }
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

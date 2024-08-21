@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|c:\\users\\iljas\\downloads\\examenitchallenges\\examenitchallenges\\examenitchallenges\\examenitchallenges\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|solutionrelative:examenitchallenges\\examenitchallenges\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|c:\\users\\iljas\\downloads\\examenitchallenges\\examenitchallenges\\examenitchallenges\\examenitchallenges\\components\\pages\\gamedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|solutionrelative:examenitchallenges\\examenitchallenges\\components\\pages\\gamedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|c:\\users\\iljas\\downloads\\examenitchallenges\\examenitchallenges\\examenitchallenges\\examenitchallenges\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|solutionrelative:examenitchallenges\\examenitchallenges\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|c:\\users\\iljas\\downloads\\examenitchallenges\\examenitchallenges\\examenitchallenges\\examenitchallenges\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|solutionrelative:examenitchallenges\\examenitchallenges\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|c:\\users\\iljas\\downloads\\examenitchallenges\\examenitchallenges\\examenitchallenges\\examenitchallenges\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46A16E9-7113-40FD-9EFA-F3713B5BFAD9}|examenItChallenges\\examenItChallenges\\examenItChallenges.csproj|solutionrelative:examenitchallenges\\examenitchallenges\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameDetails.razor",
+              "DocumentMoniker": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\Pages\\GameDetails.razor",
+              "RelativeDocumentMoniker": "examenItChallenges\\examenItChallenges\\Components\\Pages\\GameDetails.razor",
+              "ToolTip": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\Pages\\GameDetails.razor",
+              "RelativeToolTip": "examenItChallenges\\examenItChallenges\\Components\\Pages\\GameDetails.razor",
+              "ViewState": "AQIAACAAAAAAAAAAAAAowEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T12:04:35.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Program.cs",
+              "RelativeDocumentMoniker": "examenItChallenges\\examenItChallenges\\Program.cs",
+              "ToolTip": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Program.cs",
+              "RelativeToolTip": "examenItChallenges\\examenItChallenges\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:45:33.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\App.razor",
+              "RelativeDocumentMoniker": "examenItChallenges\\examenItChallenges\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\App.razor",
+              "RelativeToolTip": "examenItChallenges\\examenItChallenges\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T11:18:55.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\models\\Game.cs",
+              "RelativeDocumentMoniker": "examenItChallenges\\examenItChallenges\\models\\Game.cs",
+              "ToolTip": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\models\\Game.cs",
+              "RelativeToolTip": "examenItChallenges\\examenItChallenges\\models\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T10:57:42.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "examenItChallenges\\examenItChallenges\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\iljas\\Downloads\\examenItChallenges\\examenItChallenges\\examenItChallenges\\examenItChallenges\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "examenItChallenges\\examenItChallenges\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAuwD4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T10:48:36.955Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

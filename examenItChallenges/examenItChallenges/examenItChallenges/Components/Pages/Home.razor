@@ -1,0 +1,136 @@
+﻿@page "/"
+@using System.Text.Json
+@using Blazored.LocalStorage
+@using examenItChallenges.models
+@inject ILocalStorageService localStorage
+@inject NavigationManager NavigationManager
+
+<div class="container mt-5">
+    <h1 class="text-center">Bordspellen</h1>
+    <div class="form-group">
+        <input type="text" @bind="searchText" class="form-control" placeholder="Zoek bordspellen..." />
+    </div>
+    <ul class="list-group">
+        @foreach (var game in FilteredGames)
+        {
+            <li class="list-group-item">
+                <h2>@game.Name</h2>
+                <p>@game.Description</p>
+                <a class="btn btn-secondary" @onclick="() => NavigateToDetails(game.Id)">Bekijk details</a>
+            </li>
+        }
+    </ul>
+
+    <h2 class="mt-5">Voeg een nieuw bordspel toe</h2>
+    <form @onsubmit="HandleSubmit">
+        <div class="form-group">
+            <label for="name">Naam:</label>
+            <input id="name" class="form-control" @bind="newGame.Name" required />
+        </div>
+        <div class="form-group">
+            <label for="description">Beschrijving:</label>
+            <textarea id="description" class="form-control" @bind="newGame.Description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="players">Spelers (comma-separated):</label>
+            <input id="players" class="form-control" @bind="players" required />
+        </div>
+        <div class="form-group">
+            <label for="duration">Speeltijd:</label>
+            <input id="duration" class="form-control" @bind="newGame.Duration" required />
+        </div>
+        <div class="form-group">
+            <label for="difficulty">Moeilijkheid:</label>
+            <input id="difficulty" class="form-control" @bind="newGame.Difficulty" required />
+        </div>
+        <div class="form-group">
+            <label for="reviews">Recensies (comma-separated):</label>
+            <input id="reviews" class="form-control" @bind="reviews" />
+        </div>
+        <button class="btn btn-primary" type="submit">Toevoegen</button>
+    </form>
+</div>
+
+@code {
+    private string searchText = string.Empty;
+    private List<Game> games = new List<Game>();
+    private List<Game> FilteredGames => games.Where(g => g.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+    private Game newGame = new Game();
+    private string players;
+    private string reviews;
+    private bool isInitialized = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !isInitialized)
+        {
+            // Load games from localStorage
+            games = await localStorage.GetItemAsync<List<Game>>("games");
+
+            if (games == null || !games.Any())
+            {
+                // Initialize with default games if localStorage is empty
+                games = new List<Game>
+                {
+                    new Game
+                    {
+                        Id = 1,
+                        Name = "Catan",
+                        Description = "Een strategisch bordspel waar spelers grondstoffen verzamelen en gebruiken om dorpen en steden te bouwen.",
+                        Players = new List<string> { "2-4 spelers" },
+                        Duration = "60-120 minuten",
+                        Difficulty = "Gemiddeld",
+                        Reviews = new List<string> { "Geweldig spel!", "Zeer verslavend." }
+                    },
+                    new Game
+                    {
+                        Id = 2,
+                        Name = "Pandemic",
+                        Description = "Een coöperatief bordspel waarin spelers samenwerken om de wereld te redden van uitbraken van ziektes.",
+                        Players = new List<string> { "2-4 spelers" },
+                        Duration = "45-60 minuten",
+                        Difficulty = "Makkelijk",
+                        Reviews = new List<string> { "Een uitdagend spel", "Geweldig om samen te spelen." }
+                    }
+                };
+
+                // Save default games to localStorage
+                await localStorage.SetItemAsync("games", games);
+            }
+
+            isInitialized = true;
+            StateHasChanged(); // Refresh the UI after the games have been loaded
+        }
+    }
+
+    private async Task HandleSubmit(EventArgs e)
+    {
+        //e.PreventDefault(); // Prevent the default form submission
+
+        AddNewGame();
+
+        await Task.CompletedTask; // Ensure the task is marked as complete
+    }
+
+    private async void AddNewGame()
+    {
+        newGame.Id = games.Count + 1;
+        newGame.Players = players.Split(',').Select(p => p.Trim()).ToList();
+        newGame.Reviews = reviews.Split(',').Where(r => !string.IsNullOrWhiteSpace(r)).Select(r => r.Trim()).ToList();
+
+        games.Add(newGame);
+
+        // Save updated games to localStorage
+        await localStorage.SetItemAsync("games", games);
+
+        // Reset form fields
+        newGame = new Game();
+        players = string.Empty;
+        reviews = string.Empty;
+    }
+
+    private void NavigateToDetails(int gameId)
+    {
+        NavigationManager.NavigateTo($"/game-details/{gameId}");
+    }
+}
